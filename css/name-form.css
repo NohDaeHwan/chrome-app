@@ -1,0 +1,15 @@
+.name {
+  text-align: center;
+  padding: 40px;
+  width: 800px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+.greetings {
+  color: White;
+  font-size: 30px;
+  margin: 0px;
+  text-shadow: 3px 3px 10px tomato;
+}

@@ -1,0 +1,63 @@
+.form-todo {
+  margin: 50px 0px;
+}
+
+.form-todo input {
+  font-size: 20px;
+}
+
+.toDos {
+  display: flex;
+  justify-content: space-between;
+  width: 650px;
+}
+
+.toDos div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 300px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+.toDos h2 {
+  color: white;
+  text-shadow: 3px 3px 10px tomato;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li span {
+  color: white;
+  font-size: 20px;
+  margin-right: 20px;
+  text-shadow: 3px 3px 10px tomato;
+}
+
+li::marker {
+  color: rgba(0, 0, 0, 0);
+}
+
+li button {
+  background-color: rgba(0, 0, 0, 0);
+  margin-right: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+li button:focus {
+  outline: none;
+}

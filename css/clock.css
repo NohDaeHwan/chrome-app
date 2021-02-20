@@ -1,0 +1,15 @@
+.clock {
+  text-align: center;
+  width: 600px;
+  margin: 50px 0px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  font-size: 60px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.clock h1 {
+  margin: 20px 0px;
+  text-shadow: 3px 3px 10px tomato;
+}

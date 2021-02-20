@@ -1,0 +1,43 @@
+@keyframes play {
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.music {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-shadow: 3px 3px 10px tomato;
+  position: absolute;
+  margin-left: 20px;
+  top: 50px;
+  right: 50px;
+}
+
+.music span {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.music i {
+  font-size: 30px;
+  margin-left: 10px;
+  color: white;
+  text-shadow: 3px 3px 10px tomato;
+  cursor: pointer;
+}
+
+.music_click {
+  animation: play 0.5s linear infinite;
+}
