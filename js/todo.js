@@ -43,7 +43,7 @@ function paintPending(text) {
   const checkBtn = document.createElement("button");
   const span = document.createElement("span");
   const pendingId = toDosPending.length + 1;
-  delBtn.innerText = "❌";
+  delBtn.innerText = "✘";
   delBtn.addEventListener("click", deletePending);
   checkBtn.innerText = "✔";
   checkBtn.addEventListener("click", checkPending);
@@ -90,9 +90,9 @@ function paintFinished(text) {
   const checkBtn = document.createElement("button");
   const span = document.createElement("span");
   const finishedId = toDosFinished.length + 1;
-  delBtn.innerText = "❌";
+  delBtn.innerText = "✘";
   delBtn.addEventListener("click", deleteFinished);
-  checkBtn.innerText = "⏪";
+  checkBtn.innerText = "↻";
   checkBtn.addEventListener("click", checkFinished);
   span.innerText = text;
   liFinished.appendChild(span);

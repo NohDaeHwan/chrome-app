@@ -10,14 +10,18 @@ function getWeather(lat, lng) {
             return response.json();
         }).then(function(json) {
             const temperature = json.main.temp;
+            const feeling = json.main.feels_like;
+            const humidity = json.main.humidity;
             const place = json.name;
             const temperature_max = json.main.temp_max;
             const temperature_min = json.main.temp_min;
             weather.innerText = `
-            온도: ${temperature}
-            최고온도: ${temperature_max}
-            최저온도: ${temperature_min}
-            위치: ${place}`;
+            Temperature : ${temperature} °C
+            Feeling : ${feeling} °C
+            Temperature_max : ${temperature_max} °C
+            Temperature_min : ${temperature_min} °C
+            Humidity : ${humidity}%
+            Location : ${place}`;
         });
 }
 
