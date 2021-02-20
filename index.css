@@ -1,0 +1,157 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: #34495e;
+  margin: 0;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+.clock {
+  text-align: center;
+  width: 600px;
+  margin: 50px 0px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  font-size: 60px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.clock h1 {
+  margin: 20px 0px;
+}
+
+.name {
+  text-align: center;
+  padding: 40px;
+  width: 800px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+input {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-size: 30px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+input::placeholder {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.greetings {
+  color: White;
+  font-size: 30px;
+  margin: 0px;
+}
+
+.form-todo {
+  margin: 50px 0px;
+}
+
+.form-todo input {
+  font-size: 20px;
+}
+
+.toDos {
+  display: flex;
+  justify-content: space-between;
+  width: 650px;
+}
+
+.toDos div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 300px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+.toDos h2 {
+  color: white;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li span {
+  color: white;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+li::marker {
+  color: rgba(0, 0, 0, 0);
+}
+
+li button {
+  background-color: rgba(0, 0, 0, 0);
+  margin-right: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+li button:focus {
+  outline: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear forwards;
+}
+
+.weather {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-left: 40px;
+  color: white;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
